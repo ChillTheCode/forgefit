@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/forgefit/static/css/main.e7b5b89a.css",
+    "main.js": "/forgefit/static/js/main.46d354d9.js",
+    "static/js/453.ed3810f9.chunk.js": "/forgefit/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/forgefit/index.html",
+    "main.e7b5b89a.css.map": "/forgefit/static/css/main.e7b5b89a.css.map",
+    "main.46d354d9.js.map": "/forgefit/static/js/main.46d354d9.js.map",
+    "453.ed3810f9.chunk.js.map": "/forgefit/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7b5b89a.css",
+    "static/js/main.46d354d9.js"
+  ]
+}
