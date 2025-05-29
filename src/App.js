@@ -1,57 +1,19 @@
-import React from "react";
-import { createRoot } from "react-dom/client";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Routes and Route as well
+import GymLanding from './GymLanding'; // Assuming GymLanding is in ./GymLanding.js
 
-const Pet = () => {
-  const handleClickYes = () => {
-    alert("haloo ara");
-  };
-
-  const handleClickNo = () => {
-    alert("Give this link to ara plz :)");
-  };
-
+function App() {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        minHeight: "100vh",
-      }}
-    >
-      <div style={{ marginBottom: "20px" }}>
-        <img
-          src="./testcat.png"
-          alt="cat"
-          width="400"
-          style={{ alignSelf: "center" }}
-        />
-      </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          width: "200px",
-        }}
-      >
-        <button onClick={handleClickYes} style={{ marginRight: "10px" }}>
-          Yes
-        </button>
-        <button onClick={handleClickNo} style={{ marginLeft: "10px" }}>
-          No
-        </button>
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        {/* You'll likely have other routes here too */}
+        <Route path="/forgefit" element={<GymLanding />} />
+        {/* If GymLanding itself has internal routing,
+            you might wrap specific parts of it in a Router
+            but typically the top-level is sufficient. */}
+      </Routes>
+    </Router>
   );
-};
-
-const App = () => {
-  return <Pet />;
-};
-
-const root = createRoot(document.getElementById("root"));
-root.render(<App />);
-
+}
 
 export default App;
